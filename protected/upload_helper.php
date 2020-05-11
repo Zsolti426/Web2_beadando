@@ -27,7 +27,7 @@ else {
 		if (in_array($fileActualExt, $allowed)) {
 			if ($fileError === 0) {
 				if ($fileSize < 1000000 ) { 
-					echo 'eddig jó';
+					
 				
 						
 						$imageFullName = $newFileName . "." . uniqid("", true) . "." . $fileActualExt; 
@@ -73,7 +73,7 @@ else {
 			echo "You are allowed to upload a jpg, png or svg!";
 			exit(); 
 		}
-		echo 'jó';		
+			
 	} else {
 	echo "nem megy a post, a submit";
 	}

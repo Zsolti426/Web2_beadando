@@ -9,9 +9,11 @@
   <div class="clear"> </div>
 </section>
 <ul id="filter">
-  <li><a href="#dolgozokszallitasa">Dolgozók szállítása</a></li>
-  <li><a href="#Raklapok">Raklapok pakolása</a></li>
-  <li><a href="#Darts"></a></li>
-  <li><a href="#E-sport"></a></li>
+  <li><a href="#dolgozokszallitasa"></a>Dolgozók szállítása</li>
+  <li><a href="#Raklapok"></a>Raklapok pakolása</li>
+  <li><a href="#takaritas"></a>Takarítás</li>
+  <li><a href="#futoszalag"></a>Fútószalagnál történő munka</li>
+  <li><a href="#raktaros"></a>Raktáros</li>
+  <li><a href="#aru"></a>Áru szállitása</li>
 </ul>
 

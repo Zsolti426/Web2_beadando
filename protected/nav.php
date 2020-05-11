@@ -21,10 +21,6 @@
 		<span> &nbsp; | &nbsp; </span>
 		<a href="index.php?P=upload">Kép feltöltése</a>
 		<span> &nbsp; | &nbsp; </span>
-		<a href="index.php?P=gallery">Galéria</a>
-		<span> &nbsp; | &nbsp; </span>
-		<a href="index.php?P=arrive">Elérhetőségek</a>
-		<span> &nbsp; | &nbsp; </span>
 	<?php else : ?>
 		<span> &nbsp; | &nbsp; </span>
 	<?php endif; ?>

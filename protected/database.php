@@ -12,7 +12,7 @@ function getRecord($queryString, $queryParams = []) {
 	$result = $success ? $statement->fetch(PDO::FETCH_ASSOC) : [];
 	$statement->closeCursor();
 	$connection = null;
-	return $result;
+	return $result; //próba
 }
 
 function getList($queryString, $queryParams = []) {
