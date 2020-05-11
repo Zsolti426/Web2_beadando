@@ -6,5 +6,11 @@ a {
 	color: lightblue;
 }
 header {
-	color: lightblue;
+	color: darkblue;
+	text-align: center;
+	vertical-align: center;
+	font-family: Forte;
+}
+span {
+	color: darkblue;
 }

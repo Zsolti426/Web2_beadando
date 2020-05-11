@@ -1,5 +1,5 @@
 <header>
-  <h1>Sportok</h1>
+  <h1>Munkalehetőségek</h1>
 </header>
 <section id="content">
   <ul id="filter"> </ul>
@@ -9,20 +9,9 @@
   <div class="clear"> </div>
 </section>
 <ul id="filter">
-  <li><a href="#minden sportag">Minden sportág</a></li>
-  <li><a href="#Labdarugas">Labdarúgás</a></li>
-  <li><a href="#Darts">Darts</a></li>
-  <li><a href="#E-sport">E-sportok</a></li>
+  <li><a href="#dolgozokszallitasa">Dolgozók szállítása</a></li>
+  <li><a href="#Raklapok">Raklapok pakolása</a></li>
+  <li><a href="#Darts"></a></li>
+  <li><a href="#E-sport"></a></li>
 </ul>
 
-<ul id="photos">
- 
-  <li>
-	<a rel="gal" class="gallery" href="darts.jpg">
-	  <img src="images/darts.jpg" alt="Darts" title="Darts" />
-	</a>
-	<span class="help">Darts</span>
-	<div class="mask"> </div>
-  </li>
- 
-</ul>

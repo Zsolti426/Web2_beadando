@@ -1,6 +1,6 @@
 <?php
 
-if(!isset($_SESSION['permission']) || $_SESSION['permission'] < 1) 
+if(!isset($_SESSION['permission']) || $_SESSION['permission'] < 2) 
 	echo"<h2>Page access is forbidden!</h2>";
 else {
 

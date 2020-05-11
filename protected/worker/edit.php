@@ -48,11 +48,11 @@ else:
 				<input type="hidden" name="workerId" value="<?=$worker['id'] ?>">
 				<div class="form-row">
 					<div class="form-group col-md-6">
-						<label for="workerFirstName">First Name</label>
+						<label for="workerFirstName">Vezetéknév</label>
 						<input type="text" class="form-control" id="workerFirstName" name="first_name" value="<?=$worker['first_name'] ?>">
 					</div>
 					<div class="form-group col-md-6">
-						<label for="workerLastName">Last Name</label>
+						<label for="workerLastName">Keresztnév</label>
 						<input type="text" class="form-control" id="workerLastName" name="last_name" value="<?=$worker['last_name'] ?>">
 					</div>
 				</div>
@@ -65,7 +65,7 @@ else:
 				</div>
 				<div class="form-row">
 					<div class="form-group col-md-12">
-						<label for="workerGender">Gender</label>
+						<label for="workerGender">Nem</label>
 						<select class="form-control" id="workerGender" name="gender">
 							<option value="0" <?=$worker['gender'] == 0 ? 'selected' : '' ?> >Female</option>
 							<option value="1" <?=$worker['gender'] == 1 ? 'selected' : '' ?> >Male</option>
@@ -76,12 +76,12 @@ else:
 
 				<div class="form-row">
 					<div class="form-group col-md-12">
-						<label for="workerNationality">Nationality</label>
+						<label for="workerNationality">Származás</label>
 						<input type="text" class="form-control" id="workerNationality" name="nationality" value="<?=$worker['nationality'] ?>">
 					</div>
 				</div>
 
-				<button type="submit" class="btn btn-primary" name="editWorker">Save Worker</button>
+				<button type="submit" class="btn btn-primary" name="editWorker">Mentés</button>
 			</form>
 		<?php endif;
 	endif;

@@ -3,6 +3,7 @@
 <?php else : ?>
 	<?php 
 		if(array_key_exists('d', $_GET) && !empty($_GET['d'])) {
+			// $query = "SELECT id, first_name, last_name, email, gender, nationality FROM workers ORDER BY first_name ASC";
 			$query = "DELETE FROM workers WHERE id = :id";
 			$params = [':id' => $_GET['d']];
 			require_once DATABASE_CONTROLLER;
@@ -23,11 +24,11 @@
 			<thead>
 				<tr>
 					<th scope="col">#</th>
-					<th scope="col">First Name</th>
-					<th scope="col">Last Name</th>
+					<th scope="col">Vezetéknév</th>
+					<th scope="col">Keresztnév</th>
 					<th scope="col">Email</th>
-					<th scope="col">Gender</th>
-					<th scope="col">Nationality</th>
+					<th scope="col">Nem</th>
+					<th scope="col">Nemzetiség</th>
 					<th scope="col">Szerkesztés</th>
 					<th scope="col">Törlés</th>
 				</tr>
@@ -41,10 +42,10 @@
 						<td><a href="?P=worker&w=<?=$w['id'] ?>"><?=$w['first_name'] ?></a></td>
 						<td><?=$w['last_name'] ?></td>
 						<td><?=$w['email'] ?></td>
-						<td><?=$w['gender'] == 0 ? 'Female' : ($w['gender'] == 1 ? 'Male' : 'Other') ?></td>
+						<td><?=$w['gender'] == 0 ? 'Nő' : ($w['gender'] == 1 ? 'Férfi' : 'Egyéb') ?></td>
 						<td><?=$w['nationality'] ?></td>
-						<td><a href="?P=edit_worker&w=<?=$w['id'] ?>">Edit</a></td>
-						<td><a href="?P=list_worker&d=<?=$w['id'] ?>">Delete</a></td>
+						<td><a href="?P=edit_worker&w=<?=$w['id'] ?>">Szerkesztés</a></td>
+						<td><a href="+?P=list_worker&d=<?=$w['id'] ?>">Törlés</a></td>
 					</tr>
 				<?php endforeach;?>
 			</tbody>

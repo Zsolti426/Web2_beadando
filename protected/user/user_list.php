@@ -2,6 +2,7 @@
 	<h1>Page access is forbidden!</h1>
 <?php else : ?>
 	<?php 
+	// $query = "SELECT first_name, last_name, email, gender, nationality FROM workers ORDER BY first_name ASC";
 	$query = "SELECT first_name, last_name, email, permission FROM users";
 	require_once DATABASE_CONTROLLER;
 	$users = getList($query);
@@ -13,10 +14,10 @@
 			<thead>
 				<tr>
 					<th scope="col">#</th>
-					<th scope="col">First Name</th>
-					<th scope="col">Last Name</th>
+					<th scope="col">Vezetéknév</th>
+					<th scope="col">Keresztnév</th>
 					<th scope="col">Email</th>
-					<th scope="col">Permission</th>
+					<th scope="col">Jogosultság</th>
 				</tr>
 			</thead>
 			<tbody>

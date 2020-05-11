@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
   <div class="form-group">
     <label for="loginEmail">Az e-mail címed</label>
     <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" name="email" value="<?= isset($postData) ? $postData['email'] : '';?>">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <small id="emailHelp" class="form-text text-muted"></small>
   </div>
   <div class="form-group">
     <label for="loginPassword">A titkos jelszavad :)</label>
